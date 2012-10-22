@@ -1,0 +1,2 @@
+%ul= render partial: 'tweets'
+= link_to 'Load More', tweets_path(page: (params[:page].to_i || 1)+1, per_page: params[:per_page] || 15), class: 'hook', remote: true
